@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:wp="http://wordpress.org/export/1.2/" version="2.0">
+  <channel>
+    <title>DuwcsAnhLib — Hiệu Sách Trực Tuyến</title>
+    <link>http://duwcsanhlib.vn</link>
+    <description>Dữ liệu các trang chính sách và bài viết DuwcsAnhLib</description>
+    <language>vi</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>http://duwcsanhlib.vn</wp:base_site_url>
+    <wp:base_blog_url>http://duwcsanhlib.vn</wp:base_blog_url>
+    <wp:author>
+      <wp:author_id>1</wp:author_id>
+      <wp:author_login>duwcsanhlib</wp:author_login>
+      <wp:author_email>hotro@duwcsanhlib.vn</wp:author_email>
+      <wp:author_display_name>Ban Biên Tập DuwcsAnhLib</wp:author_display_name>
+    </wp:author>
+    <item>
+      <title>Về DuwcsAnhLib</title>
+      <link>http://duwcsanhlib.vn/gioi-thieu/</link>
+      <dc:creator>duwcsanhlib</dc:creator>
+      <content:encoded>&lt;p&gt;DuwcsAnhLib là hệ thống nhà sách trực tuyến chuyên cung cấp các ấn phẩm sách tinh tuyển, chất lượng cao dành cho độc giả yêu văn hóa đọc trên toàn quốc. Chúng tôi tin rằng mỗi cuốn sách là một nguồn cảm hứng bất tận, mở rộng tư duy và bồi đắp tri thức cho mỗi cá nhân.&lt;/p&gt;
+&lt;p&gt;Tại DuwcsAnhLib, độc giả có thể dễ dàng tìm kiếm những ấn bản chất lượng thuộc 5 thể loại cốt lõi: Văn học &amp;amp; Tản văn, Kinh tế &amp;amp; Khởi nghiệp, Tâm lý &amp;amp; Đời sống, Kỹ năng phát triển bản thân và Sách Thiếu nhi. Mọi ấn bản đều được nhập trực tiếp và phân phối chính thức từ các nhà xuất bản uy tín hàng đầu như Nhà xuất bản Trẻ.&lt;/p&gt;
+&lt;p&gt;Với phương châm phục vụ tận tâm, DuwcsAnhLib cam kết 100% sách thật, quy cách đóng gói chống sốc kỹ lưỡng và dịch vụ giao hàng nhanh chóng tận tay độc giả.&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>2001</wp:post_id>
+      <wp:post_date>2026-11-04 10:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 03:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>gioi-thieu</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Liên hệ DuwcsAnhLib</title>
+      <link>http://duwcsanhlib.vn/lien-he/</link>
+      <dc:creator>duwcsanhlib</dc:creator>
+      <content:encoded>&lt;p&gt;DuwcsAnhLib luôn sẵn sàng hỗ trợ độc giả trong việc tra cứu thông tin sách, đặt hàng và chăm sóc hậu mãi.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Thương hiệu:&lt;/strong&gt; DuwcsAnhLib — Hiệu Sách &amp;amp; Thư Viện Tri Thức&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Hotline hỗ trợ:&lt;/strong&gt; 0933 543 987 (Hỗ trợ từ 08:00 – 21:00 hàng ngày)&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Email:&lt;/strong&gt; lienhe@duwcsanhlib.vn&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Địa chỉ:&lt;/strong&gt; Hệ thống phân phối trực tuyến DuwcsAnhLib&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Thời gian làm việc:&lt;/strong&gt; Thứ 2 đến Chủ nhật (08:00 – 21:00)&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>2002</wp:post_id>
+      <wp:post_date>2026-11-04 10:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 03:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>lien-he</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Chính sách Giao hàng — DuwcsAnhLib</title>
+      <link>http://duwcsanhlib.vn/giao-hang/</link>
+      <dc:creator>duwcsanhlib</dc:creator>
+      <content:encoded>&lt;p&gt;DuwcsAnhLib liên kết cùng các đơn vị vận chuyển hàng đầu (VNPost, ViettelPost, GHTK) để giao sách nhanh chóng đến tận tay bạn:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Phạm vi giao hàng:&lt;/strong&gt; Toàn quốc đến tất cả 63 tỉnh thành.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Thời gian giao dự kiến:&lt;/strong&gt; 1 – 2 ngày làm việc đối với khu vực nội thành, 2 – 4 ngày đối với khu vực liên tỉnh.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Ưu đãi cước phí:&lt;/strong&gt; &lt;strong&gt;MIỄN PHÍ VẬN CHUYỂN TOÀN QUỐC&lt;/strong&gt; cho tất cả các đơn hàng từ 250.000 đ. Đơn hàng dưới 250.000 đ áp dụng phí vận chuyển tiêu chuẩn 25.000 đ.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Quy cách đóng gói:&lt;/strong&gt; 100% sách được bao bọc bằng màng xốp khí chống va đập và đóng hộp carton cứng cáp để giữ nguyên góc cạnh sách.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Hotline điều phối giao hàng:&lt;/strong&gt; 0933 543 987&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>2003</wp:post_id>
+      <wp:post_date>2026-11-04 10:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 03:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>giao-hang</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Chính sách Đổi trả &amp; Hoàn tiền — DuwcsAnhLib</title>
+      <link>http://duwcsanhlib.vn/doi-tra/</link>
+      <dc:creator>duwcsanhlib</dc:creator>
+      <content:encoded>&lt;p&gt;Nhằm đảm bảo quyền lợi cao nhất của khách hàng, DuwcsAnhLib áp dụng chính sách đổi trả minh bạch và nhanh chóng:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Thời hạn tiếp nhận:&lt;/strong&gt; Trong vòng 7 ngày kể từ thời điểm nhận sách thành công.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Điều kiện áp dụng:&lt;/strong&gt; Sách bị lỗi in ấn (trang trắng, ngược trang, mờ chữ), rách bìa hoặc cấn móp trong quá trình vận chuyển.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Hình thức xử lý:&lt;/strong&gt; Đổi mới 100% cuốn sách cùng tựa hoàn toàn miễn phí (DuwcsAnhLib chịu toàn bộ phí vận chuyển đổi chiều).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Quy trình đơn giản:&lt;/strong&gt; Quý khách chỉ cần liên hệ hotline &lt;strong&gt;0933 543 987&lt;/strong&gt; hoặc gửi hình ảnh qua Zalo/Email để được xử lý ngay trong 24h.&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>2004</wp:post_id>
+      <wp:post_date>2026-11-04 10:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 03:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>doi-tra</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Chính sách Bảo mật Thông tin — DuwcsAnhLib</title>
+      <link>http://duwcsanhlib.vn/bao-mat/</link>
+      <dc:creator>duwcsanhlib</dc:creator>
+      <content:encoded>&lt;p&gt;DuwcsAnhLib cam kết bảo vệ tuyệt đối thông tin cá nhân của khách hàng theo quy chuẩn pháp luật:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Thông tin thu thập:&lt;/strong&gt; Họ tên, số điện thoại, địa chỉ nhận hàng và email để phục vụ việc giao nhận và thông báo trạng thái đơn hàng.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Mục đích sử dụng:&lt;/strong&gt; Xử lý đơn hàng, thông tin hành trình bưu phẩm và chăm sóc khách hàng sau bán.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Cam kết an toàn:&lt;/strong&gt; Không chia sẻ, buôn bán hoặc tiết lộ thông tin người dùng cho bất kỳ bên thứ ba nào ngoài đối tác vận chuyển giao hàng.&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>2005</wp:post_id>
+      <wp:post_date>2026-11-04 10:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 03:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>bao-mat</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Khởi đầu ngày mới cùng thói quen đọc 15 phút</title>
+      <link>http://duwcsanhlib.vn/blog-01/</link>
+      <dc:creator>duwcsanhlib</dc:creator>
+      <content:encoded>&lt;p&gt;Dành 15 phút mỗi buổi sáng cho một vài trang sách có thể tạo nên sự chuyển biến bất ngờ cho tư duy và tâm trạng của bạn trong cả ngày dài.&lt;/p&gt;
+&lt;p&gt;Tại DuwcsAnhLib, chúng tôi khuyến khích độc giả bắt đầu từ những cuốn tản văn nhẹ nhàng hoặc những đầu sách kỹ năng ngắn gọn. Không cần đặt áp lực phải hoàn thành cả cuốn sách trong một ngày, điều quý giá nhất là sự đều đặn và khoảng không gian tĩnh tại bạn dành riêng cho tâm trí.&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>2006</wp:post_id>
+      <wp:post_date>2026-11-04 10:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 03:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>blog-01</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>5 tựa sách kinh điển nên có trên giá sách của bạn</title>
+      <link>http://duwcsanhlib.vn/blog-02/</link>
+      <dc:creator>duwcsanhlib</dc:creator>
+      <content:encoded>&lt;p&gt;Dù xu hướng đọc có thay đổi theo thời gian, những giá trị nguyên bản trong các tác phẩm văn học kinh điển vẫn luôn giữ nguyên sức hút.&lt;/p&gt;
+&lt;p&gt;Bài viết này gợi ý 5 ấn bản nổi bật đang có mặt tại thư viện DuwcsAnhLib, từ những tác phẩm phản ánh chiều sâu văn hóa đến những câu chuyện truyền cảm hứng vượt thời gian. Hãy cùng khám phá và tìm cho mình một cuốn sách phù hợp nhất cho dịp cuối tuần này.&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>2007</wp:post_id>
+      <wp:post_date>2026-11-04 10:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 03:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>blog-02</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Nghệ thuật chọn sách cho trẻ em theo từng độ tuổi</title>
+      <link>http://duwcsanhlib.vn/blog-03/</link>
+      <dc:creator>duwcsanhlib</dc:creator>
+      <content:encoded>&lt;p&gt;Đọc sách cùng con không chỉ giúp bồi đắp vốn từ và trí tưởng tượng mà còn là cầu nối gắn kết tình cảm gia đình.&lt;/p&gt;
+&lt;p&gt;Bộ sưu tập Sách Thiếu nhi tại DuwcsAnhLib được tuyển chọn với nội dung nhân văn, hình minh họa tươi sáng và ngôn ngữ dễ hiểu. Hãy tham khảo những kinh nghiệm chọn sách theo giai đoạn phát triển để giúp trẻ xây dựng tình yêu đọc sách tự nhiên nhất.&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>2008</wp:post_id>
+      <wp:post_date>2026-11-04 10:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 03:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>blog-03</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+  </channel>
+</rss>
