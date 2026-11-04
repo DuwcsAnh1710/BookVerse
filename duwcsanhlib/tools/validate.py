@@ -80,6 +80,7 @@ def run_all_checks():
     check((content_dir / 'trang-chu-flatsome-shortcodes.txt').exists(), "Mã shortcode Trang chủ Flatsome tồn tại")
     check((content_dir / 'trang-chu.md').exists(), "Tài liệu cấu trúc Trang chủ trang-chu.md tồn tại")
     check((ROOT / 'docs' / '03-huong-dan-thiet-lap-landingpage-flatsome.md').exists(), "Hướng dẫn thiết lập Landing page Flatsome tồn tại")
+    check((ROOT / 'docs' / '04-huong-dan-toi-uu-shop-va-chi-tiet-san-pham.md').exists(), "Hướng dẫn tối ưu Shop và Chi tiết sản phẩm tồn tại")
     
     # 5. Kiểm tra giá và tồn kho
     all_prices_valid = all(int(p['Regular price']) > 0 and int(p['Stock']) > 0 for p in products)
