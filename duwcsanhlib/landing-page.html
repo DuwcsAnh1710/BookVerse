@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuwcsAnhLib — Hiệu Sách & Thư Viện Tri Thức</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,400&display=swap');
+    
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      background-color: #FAF8F5;
+      color: #1C1917;
+      scroll-behavior: smooth;
+    }
+    .serif-title { font-family: 'Playfair Display', serif; }
+    .brand-red { color: #C92127; }
+    .bg-brand-red { background-color: #C92127; }
+    .material-symbols-outlined { vertical-align: middle; }
+
+    /* Modern 2026 Micro-effects */
+    @keyframes float-hero {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(0.8deg); }
+    }
+    .animate-float {
+      animation: float-hero 5s ease-in-out infinite;
+    }
+
+    @keyframes pulse-glow {
+      0% { transform: scale(0.92); opacity: 0.55; }
+      50% { transform: scale(1.12); opacity: 0.95; }
+      100% { transform: scale(0.92); opacity: 0.55; }
+    }
+    .glow-aura {
+      animation: pulse-glow 4.5s ease-in-out infinite;
+    }
+
+    @keyframes shimmer-sweep {
+      0% { transform: translateX(-150%) rotate(25deg); }
+      35% { transform: translateX(250%) rotate(25deg); }
+      100% { transform: translateX(250%) rotate(25deg); }
+    }
+    .shimmer-btn {
+      position: relative;
+      overflow: hidden;
+    }
+    .shimmer-btn::after {
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      width: 60%;
+      height: 300%;
+      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.45), transparent);
+      animation: shimmer-sweep 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    /* Frosted Glass */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    /* Ambient Hero Background */
+    .hero-library-bg {
+      background-image: 
+        radial-gradient(circle at 80% 30%, rgba(245, 158, 11, 0.22) 0%, transparent 50%),
+        radial-gradient(circle at 20% 70%, rgba(201, 33, 39, 0.28) 0%, transparent 60%),
+        linear-gradient(135deg, rgba(45, 4, 7, 0.93) 0%, rgba(110, 18, 22, 0.88) 45%, rgba(22, 3, 5, 0.96) 100%),
+        url('assets/hero-bookstore-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+  <!-- MINIMALIST STICKY HEADER -->
+  <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200/80 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <a href="#hero" class="flex items-center gap-3 shrink-0 group">
+        <img src="assets/logo-header.png" alt="DuwcsAnhLib" class="h-11 sm:h-12 w-auto object-contain group-hover:opacity-90 transition">
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-xs font-bold text-stone-700">
+        <a href="#usp" class="hover:text-brand-red transition">Cam Kết Dịch Vụ</a>
+        <a href="#the-loai" class="hover:text-brand-red transition">5 Thể Loại Sách</a>
+        <a href="#noi-bat" class="hover:text-brand-red transition">Ấn Bản Tiêu Biểu</a>
+        <a href="#dong-goi" class="hover:text-brand-red transition">Quy Cách Đóng Gói</a>
+        <a href="#tac-gia" class="hover:text-brand-red transition">Tác Giả</a>
+        <a href="#danh-gia" class="hover:text-brand-red transition">Độc Giả</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button onclick="enterStore()" class="px-5 py-2.5 bg-brand-red hover:bg-red-700 text-white font-extrabold rounded-lg text-xs shadow-md transition flex items-center gap-2 cursor-pointer uppercase tracking-wider group">
+          <span>Vào Cửa Hàng</span>
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION: CINEMATIC BOOKSTORE BACKDROP & GLOWING PHOENIX -->
+  <section id="hero" class="relative overflow-hidden hero-library-bg text-white py-20 sm:py-28 px-4 border-b border-red-950">
+    <!-- Ambient Lighting Effects -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-red-600/25 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 right-1/4 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      
+      <!-- Left Content -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full glass-card text-amber-300 text-xs font-black uppercase tracking-wider shadow-inner">
+          <span class="material-symbols-outlined text-sm text-amber-400">local_fire_department</span>
+          <span>Hiệu Sách & Thư Viện Tri Thức</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black serif-title leading-[1.12] drop-shadow-md">
+          Đọc Để Trưởng Thành<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400">
+            & Khai Phóng Tri Thức
+          </span>
+        </h1>
+
+        <p class="text-red-100/95 text-sm sm:text-base leading-relaxed max-w-xl font-normal drop-shadow">
+          DuwcsAnhLib là không gian tuyển chọn 25 ấn bản kinh điển & đương đại từ Nhà xuất bản Trẻ. Mỗi cuốn sách là một ngọn lửa dẫn lối tư duy, được đóng gói chống sốc 3 lớp cẩn thận trước khi giao tận tay bạn.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="pt-3 flex flex-wrap items-center gap-4">
+          <button onclick="enterStore()" class="shimmer-btn px-8 py-4 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-stone-950 font-black rounded-xl text-xs sm:text-sm uppercase tracking-wider shadow-xl hover:shadow-2xl transition transform hover:-translate-y-0.5 flex items-center gap-2.5 cursor-pointer">
+            <span class="material-symbols-outlined text-lg">storefront</span>
+            <span>Khám Phá Cửa Hàng</span>
+            <span class="material-symbols-outlined text-sm font-black">arrow_forward</span>
+          </button>
+          
+          <a href="#dong-goi" class="px-6 py-4 glass-card hover:bg-white/15 text-white font-bold rounded-xl text-xs sm:text-sm transition flex items-center gap-2 cursor-pointer">
+            <span class="material-symbols-outlined text-base text-amber-300">verified_user</span>
+            <span>Cam Kết 100% Sách Thật</span>
+          </a>
+        </div>
+
+        <!-- Glassmorphism Trust Badges -->
+        <div class="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl">
+          <div class="glass-card px-3.5 py-2.5 rounded-xl flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-amber-300 text-base">verified</span>
+            <span class="text-[11px] font-bold text-red-100">100% NXB Trẻ</span>
+          </div>
+          <div class="glass-card px-3.5 py-2.5 rounded-xl flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-amber-300 text-base">inventory_2</span>
+            <span class="text-[11px] font-bold text-red-100">Hộp Carton 3 Lớp</span>
+          </div>
+          <div class="glass-card px-3.5 py-2.5 rounded-xl flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-amber-300 text-base">published_with_changes</span>
+            <span class="text-[11px] font-bold text-red-100">Đổi Trả Trong 7 Ngày</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Graphic: Floating Phoenix with Radial Aura -->
+      <div class="lg:col-span-5 flex justify-center items-center relative">
+        <div class="relative w-80 sm:w-96 flex justify-center items-center">
+          <!-- Animated Radial Glow -->
+          <div class="absolute w-72 h-72 sm:w-80 sm:h-80 bg-gradient-to-tr from-amber-500/40 via-red-600/45 to-yellow-400/30 rounded-full blur-3xl glow-aura"></div>
+          
+          <!-- Outer Glass Halo Ring -->
+          <div class="absolute inset-0 rounded-full border border-amber-300/20 scale-110 pointer-events-none"></div>
+
+          <!-- Master Phoenix Logo -->
+          <img src="assets/logo-phoenix-master.png" alt="Phượng Hoàng DuwcsAnhLib" class="relative z-10 w-72 sm:w-88 h-auto drop-shadow-[0_20px_35px_rgba(0,0,0,0.65)] animate-float">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2. SECTION: 4 LỢI ÍCH DỊCH VỤ (USP) -->
+  <section id="usp" class="bg-white border-y border-stone-200 py-8 px-4 shadow-sm relative z-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="flex items-center gap-3.5 p-3 rounded-2xl hover:bg-stone-50 transition border border-transparent hover:border-stone-200">
+        <div class="w-12 h-12 rounded-xl bg-red-50 text-brand-red flex items-center justify-center shrink-0 shadow-sm">
+          <span class="material-symbols-outlined text-2xl text-brand-red">verified</span>
+        </div>
+        <div>
+          <h4 class="font-extrabold text-xs sm:text-sm text-stone-900">100% Sách Thật</h4>
+          <p class="text-[11px] text-stone-500 mt-0.5">Ấn bản chính thức NXB Trẻ</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3.5 p-3 rounded-2xl hover:bg-stone-50 transition border border-transparent hover:border-stone-200">
+        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 shadow-sm">
+          <span class="material-symbols-outlined text-2xl text-emerald-600">inventory_2</span>
+        </div>
+        <div>
+          <h4 class="font-extrabold text-xs sm:text-sm text-stone-900">Đóng Gói Chống Móp</h4>
+          <p class="text-[11px] text-stone-500 mt-0.5">Bọc bóng khí &amp; thùng carton</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3.5 p-3 rounded-2xl hover:bg-stone-50 transition border border-transparent hover:border-stone-200">
+        <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 shadow-sm">
+          <span class="material-symbols-outlined text-2xl text-amber-600">local_shipping</span>
+        </div>
+        <div>
+          <h4 class="font-extrabold text-xs sm:text-sm text-stone-900">Miễn Phí Vận Chuyển</h4>
+          <p class="text-[11px] text-stone-500 mt-0.5">Đơn hàng từ 250.000 đ</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3.5 p-3 rounded-2xl hover:bg-stone-50 transition border border-transparent hover:border-stone-200">
+        <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 shadow-sm">
+          <span class="material-symbols-outlined text-2xl text-blue-600">support_agent</span>
+        </div>
+        <div>
+          <h4 class="font-extrabold text-xs sm:text-sm text-stone-900">Hotline: 0933.543.987</h4>
+          <p class="text-[11px] text-stone-500 mt-0.5">Hỗ trợ độc giả 08:00 - 21:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SECTION: 5 CHỦ ĐỀ SÁCH TINH TUYỂN (CATEGORY CARDS) -->
+  <section id="the-loai" class="py-16 px-4 bg-[#FAF8F5]">
+    <div class="max-w-7xl mx-auto space-y-10">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-xs font-black uppercase tracking-wider text-brand-red bg-red-50 px-3 py-1 rounded-full">
+          DANH MỤC CỐT LÕI
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold serif-title text-stone-900">Khám Phá Theo Thể Loại</h2>
+        <p class="text-xs sm:text-sm text-stone-600">5 thể loại sách cốt lõi định hình tư duy, thắp sáng nhận thức và nuôi dưỡng tâm hồn</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div onclick="enterStore('Văn học')" class="group bg-white p-5 rounded-2xl border border-stone-200 hover:border-red-500 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-56 text-left cursor-pointer transform hover:-translate-y-1">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-red-50 text-brand-red flex items-center justify-center group-hover:scale-110 transition">
+              <span class="material-symbols-outlined text-2xl">auto_stories</span>
+            </div>
+            <h3 class="font-bold text-base text-stone-900 group-hover:text-brand-red transition">Văn Học &amp; Tản Văn</h3>
+            <p class="text-xs text-stone-500">Những trang viết đằm thắm về con người, Hà Nội và Sài Gòn xưa.</p>
+          </div>
+          <span class="text-xs font-bold text-brand-red flex items-center gap-1">5 ấn bản &rarr;</span>
+        </div>
+
+        <div onclick="enterStore('Kinh tế')" class="group bg-white p-5 rounded-2xl border border-stone-200 hover:border-emerald-500 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-56 text-left cursor-pointer transform hover:-translate-y-1">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center group-hover:scale-110 transition">
+              <span class="material-symbols-outlined text-2xl">trending_up</span>
+            </div>
+            <h3 class="font-bold text-base text-stone-900 group-hover:text-emerald-700 transition">Kinh Tế &amp; Khởi Nghiệp</h3>
+            <p class="text-xs text-stone-500">Quyền lực tiến bộ, chu kỳ thị trường và bài học thực chiến.</p>
+          </div>
+          <span class="text-xs font-bold text-emerald-600 flex items-center gap-1">5 ấn bản &rarr;</span>
+        </div>
+
+        <div onclick="enterStore('Tâm lý')" class="group bg-white p-5 rounded-2xl border border-stone-200 hover:border-purple-500 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-56 text-left cursor-pointer transform hover:-translate-y-1">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center group-hover:scale-110 transition">
+              <span class="material-symbols-outlined text-2xl">psychology</span>
+            </div>
+            <h3 class="font-bold text-base text-stone-900 group-hover:text-purple-700 transition">Tâm Lý &amp; Đời Sống</h3>
+            <p class="text-xs text-stone-500">Tìm bình an trong gian nan, chữa lành lo nghĩ và sống giản dị.</p>
+          </div>
+          <span class="text-xs font-bold text-purple-600 flex items-center gap-1">5 ấn bản &rarr;</span>
+        </div>
+
+        <div onclick="enterStore('Kỹ năng')" class="group bg-white p-5 rounded-2xl border border-stone-200 hover:border-orange-500 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-56 text-left cursor-pointer transform hover:-translate-y-1">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center group-hover:scale-110 transition">
+              <span class="material-symbols-outlined text-2xl">lightbulb</span>
+            </div>
+            <h3 class="font-bold text-base text-stone-900 group-hover:text-orange-700 transition">Kỹ Năng Bản Thân</h3>
+            <p class="text-xs text-stone-500">Vượt qua bẫy so sánh, hội chứng kẻ mạo danh để tốt hơn mỗi ngày.</p>
+          </div>
+          <span class="text-xs font-bold text-orange-600 flex items-center gap-1">5 ấn bản &rarr;</span>
+        </div>
+
+        <div onclick="enterStore('Thiếu nhi')" class="group bg-white p-5 rounded-2xl border border-stone-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-56 text-left cursor-pointer transform hover:-translate-y-1">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:scale-110 transition">
+              <span class="material-symbols-outlined text-2xl">child_care</span>
+            </div>
+            <h3 class="font-bold text-base text-stone-900 group-hover:text-blue-700 transition">Sách Thiếu Nhi</h3>
+            <p class="text-xs text-stone-500">Kể chuyện lễ hội Nam Bộ, 500 câu chuyện đạo đức và tình yêu thương.</p>
+          </div>
+          <span class="text-xs font-bold text-blue-600 flex items-center gap-1">5 ấn bản &rarr;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SECTION: ẤN BẢN TIÊU BIỂU (FEATURED BOOKS) -->
+  <section id="noi-bat" class="py-16 px-4 bg-white border-t border-stone-200">
+    <div class="max-w-7xl mx-auto space-y-10">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-brand-red bg-red-50 px-3 py-1 rounded-full">
+            TUYỂN TẬP TINH HOA
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold serif-title text-stone-900 mt-2">Ấn Bản Được Yêu Thích Nhất</h2>
+        </div>
+        <button onclick="enterStore()" class="text-xs sm:text-sm font-bold text-brand-red hover:underline flex items-center gap-1 cursor-pointer">
+          <span>Xem tất cả 25 đầu sách tại cửa hàng</span>
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Book 1 -->
+        <div class="bg-stone-50 rounded-2xl p-4 border border-stone-200 hover:shadow-xl transition flex flex-col justify-between group">
+          <div>
+            <div class="relative overflow-hidden rounded-xl bg-white shadow-sm aspect-[2/3] flex items-center justify-center mb-3">
+              <img src="assets/covers/DAL-001.png" alt="Nhà Cũ Trong Phố Cũ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <span class="absolute top-2 left-2 bg-brand-red text-white text-[10px] font-black px-2 py-0.5 rounded shadow">-10%</span>
+            </div>
+            <span class="text-[10px] font-bold text-stone-500 uppercase tracking-wider">Văn Học • Trung Sỹ</span>
+            <h4 class="font-extrabold text-sm text-stone-900 group-hover:text-brand-red transition line-clamp-1 mt-1">Nhà Cũ Trong Phố Cũ</h4>
+            <div class="flex items-center gap-1 text-amber-400 text-xs mt-1">★★★★★ <span class="text-stone-400 text-[10px]">(32 đánh giá)</span></div>
+          </div>
+          <div class="mt-3 pt-3 border-t border-stone-200 flex items-center justify-between">
+            <div>
+              <div class="font-extrabold text-brand-red text-sm">99.000 đ</div>
+              <div class="text-[11px] text-stone-400 line-through">110.000 đ</div>
+            </div>
+            <button onclick="enterStore('Văn học')" class="px-3 py-1.5 bg-brand-red hover:bg-red-700 text-white rounded-lg text-xs font-bold transition cursor-pointer">Mua Ngay</button>
+          </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="bg-stone-50 rounded-2xl p-4 border border-stone-200 hover:shadow-xl transition flex flex-col justify-between group">
+          <div>
+            <div class="relative overflow-hidden rounded-xl bg-white shadow-sm aspect-[2/3] flex items-center justify-center mb-3">
+              <img src="assets/covers/DAL-011.png" alt="Lắng Nghe Khi Thị Trường Lên Tiếng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <span class="absolute top-2 left-2 bg-brand-red text-white text-[10px] font-black px-2 py-0.5 rounded shadow">-10%</span>
+            </div>
+            <span class="text-[10px] font-bold text-stone-500 uppercase tracking-wider">Kinh Tế • Lawrence G.McDonald</span>
+            <h4 class="font-extrabold text-sm text-stone-900 group-hover:text-brand-red transition line-clamp-1 mt-1">Lắng Nghe Khi Thị Trường Lên Tiếng</h4>
+            <div class="flex items-center gap-1 text-amber-400 text-xs mt-1">★★★★★ <span class="text-stone-400 text-[10px]">(48 đánh giá)</span></div>
+          </div>
+          <div class="mt-3 pt-3 border-t border-stone-200 flex items-center justify-between">
+            <div>
+              <div class="font-extrabold text-brand-red text-sm">144.000 đ</div>
+              <div class="text-[11px] text-stone-400 line-through">160.000 đ</div>
+            </div>
+            <button onclick="enterStore('Kinh tế')" class="px-3 py-1.5 bg-brand-red hover:bg-red-700 text-white rounded-lg text-xs font-bold transition cursor-pointer">Mua Ngay</button>
+          </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="bg-stone-50 rounded-2xl p-4 border border-stone-200 hover:shadow-xl transition flex flex-col justify-between group">
+          <div>
+            <div class="relative overflow-hidden rounded-xl bg-white shadow-sm aspect-[2/3] flex items-center justify-center mb-3">
+              <img src="assets/covers/DAL-016.png" alt="Trong Gian Nan Có Bình An" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <span class="absolute top-2 left-2 bg-brand-red text-white text-[10px] font-black px-2 py-0.5 rounded shadow">-10%</span>
+            </div>
+            <span class="text-[10px] font-bold text-stone-500 uppercase tracking-wider">Tâm Lý • Kieran Setiya</span>
+            <h4 class="font-extrabold text-sm text-stone-900 group-hover:text-brand-red transition line-clamp-1 mt-1">Trong Gian Nan Có Bình An</h4>
+            <div class="flex items-center gap-1 text-amber-400 text-xs mt-1">★★★★★ <span class="text-stone-400 text-[10px]">(29 đánh giá)</span></div>
+          </div>
+          <div class="mt-3 pt-3 border-t border-stone-200 flex items-center justify-between">
+            <div>
+              <div class="font-extrabold text-brand-red text-sm">99.000 đ</div>
+              <div class="text-[11px] text-stone-400 line-through">110.000 đ</div>
+            </div>
+            <button onclick="enterStore('Tâm lý')" class="px-3 py-1.5 bg-brand-red hover:bg-red-700 text-white rounded-lg text-xs font-bold transition cursor-pointer">Mua Ngay</button>
+          </div>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="bg-stone-50 rounded-2xl p-4 border border-stone-200 hover:shadow-xl transition flex flex-col justify-between group">
+          <div>
+            <div class="relative overflow-hidden rounded-xl bg-white shadow-sm aspect-[2/3] flex items-center justify-center mb-3">
+              <img src="assets/covers/DAL-006.png" alt="Chiến Thắng Thiên Tài" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <span class="absolute top-2 left-2 bg-brand-red text-white text-[10px] font-black px-2 py-0.5 rounded shadow">-10%</span>
+            </div>
+            <span class="text-[10px] font-bold text-stone-500 uppercase tracking-wider">Kỹ Năng • Tsunku</span>
+            <h4 class="font-extrabold text-sm text-stone-900 group-hover:text-brand-red transition line-clamp-1 mt-1">Chiến Thắng Thiên Tài</h4>
+            <div class="flex items-center gap-1 text-amber-400 text-xs mt-1">★★★★★ <span class="text-stone-400 text-[10px]">(51 đánh giá)</span></div>
+          </div>
+          <div class="mt-3 pt-3 border-t border-stone-200 flex items-center justify-between">
+            <div>
+              <div class="font-extrabold text-brand-red text-sm">130.000 đ</div>
+              <div class="text-[11px] text-stone-400 line-through">145.000 đ</div>
+            </div>
+            <button onclick="enterStore('Kỹ năng')" class="px-3 py-1.5 bg-brand-red hover:bg-red-700 text-white rounded-lg text-xs font-bold transition cursor-pointer">Mua Ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SECTION: CAM KẾT ĐÓNG GÓI & TÔN CHỈ THƯƠNG HIỆU -->
+  <section id="dong-goi" class="py-16 px-4 bg-[#FFFBEB] border-t border-amber-200">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div class="space-y-5">
+        <span class="text-xs font-black uppercase tracking-wider text-amber-900 bg-amber-200/80 px-3.5 py-1 rounded-full">
+          BẢO VỆ GÁY &amp; BÌA SÁCH TUYỆT ĐỐI
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold serif-title text-amber-950 leading-tight">
+          Mỗi Cuốn Sách Đến Tay Bạn Đều Trọn Vẹn Như Mới Rời Nhà In
+        </h2>
+        <p class="text-xs sm:text-sm text-amber-900 leading-relaxed">
+          Chúng tôi hiểu rằng với người yêu sách, một nếp gấp gáy hay góc bìa cấn móp cũng làm giảm đi niềm vui đọc. Vì vậy, DuwcsAnhLib áp dụng quy chuẩn đóng gói 3 lớp bảo vệ chuyên biệt:
+        </p>
+        <div class="space-y-3 text-xs sm:text-sm text-amber-950 font-medium">
+          <div class="flex items-start gap-3 bg-white/80 p-3.5 rounded-xl border border-amber-200 shadow-sm">
+            <span class="w-7 h-7 rounded-lg bg-amber-100 text-amber-800 font-black flex items-center justify-center shrink-0">1</span>
+            <div><strong>Lớp 1: Màng co chống ẩm</strong> — Bảo vệ bề mặt bìa và mép sách khỏi độ ẩm và bụi bẩn.</div>
+          </div>
+          <div class="flex items-start gap-3 bg-white/80 p-3.5 rounded-xl border border-amber-200 shadow-sm">
+            <span class="w-7 h-7 rounded-lg bg-amber-100 text-amber-800 font-black flex items-center justify-center shrink-0">2</span>
+            <div><strong>Lớp 2: Xốp bóng khí 2-3 vòng</strong> — Chống sốc tối đa cho 4 góc nhọn khi vận chuyển xa.</div>
+          </div>
+          <div class="flex items-start gap-3 bg-white/80 p-3.5 rounded-xl border border-amber-200 shadow-sm">
+            <span class="w-7 h-7 rounded-lg bg-amber-100 text-amber-800 font-black flex items-center justify-center shrink-0">3</span>
+            <div><strong>Lớp 3: Hộp carton sóng 3 lớp</strong> — Chắc chắn, niêm phong băng keo bảo mật thương hiệu.</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gradient-to-br from-amber-900 via-red-950 to-stone-950 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden text-center flex flex-col items-center justify-center">
+        <div class="w-20 h-20 rounded-2xl bg-amber-400/20 text-yellow-300 flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-5xl">verified</span>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-extrabold serif-title text-yellow-300 mb-3">100% Sách Thật</h3>
+        <p class="text-amber-100 text-xs sm:text-sm leading-relaxed max-w-md mb-6">
+          "Không kinh doanh sách lậu, sách photocopy hay ấn bản trôi nổi. Tôn trọng bản quyền tác giả và nhà xuất bản là nền tảng cốt lõi của DuwcsAnhLib."
+        </p>
+        <div class="border-t border-amber-500/30 pt-4 w-full text-xs font-black uppercase tracking-widest text-white/90">
+          — BAN BIÊN TẬP DUWCSANHLIB —
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SECTION: TÁC GIẢ TIÊU BIỂU -->
+  <section id="tac-gia" class="py-16 px-4 bg-white border-t border-stone-200">
+    <div class="max-w-7xl mx-auto space-y-10">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-xs font-black uppercase tracking-wider text-brand-red bg-red-50 px-3 py-1 rounded-full">
+          ĐỒNG HÀNH TRI THỨC
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold serif-title text-stone-900">Gặp Gỡ Các Tác Giả Tiêu Biểu</h2>
+        <p class="text-xs sm:text-sm text-stone-600">Những cây bút uyên bác và chuyên gia hàng đầu góp mặt trong tủ sách DuwcsAnhLib</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border border-stone-200 bg-stone-50/50 hover:bg-white hover:border-brand-red hover:shadow-xl transition-all duration-300 text-center space-y-3">
+          <div class="w-16 h-16 rounded-full bg-red-100 text-brand-red mx-auto flex items-center justify-center font-bold text-2xl shadow-inner">
+            <span class="material-symbols-outlined text-3xl">history_edu</span>
+          </div>
+          <h4 class="font-extrabold text-base text-stone-900">Học Giả Vương Hồng Sển</h4>
+          <p class="text-xs text-stone-500 leading-relaxed">
+            Tác giả tác phẩm kinh điển <em>"Khám Lớn Sài Gòn"</em> — Nhà nghiên cứu văn hóa Nam Bộ uyên bác với những trang tư liệu đô thị sống động và vô giá.
+          </p>
+        </div>
+        <div class="p-6 rounded-2xl border border-stone-200 bg-stone-50/50 hover:bg-white hover:border-brand-red hover:shadow-xl transition-all duration-300 text-center space-y-3">
+          <div class="w-16 h-16 rounded-full bg-amber-100 text-amber-700 mx-auto flex items-center justify-center font-bold text-2xl shadow-inner">
+            <span class="material-symbols-outlined text-3xl">record_voice_over</span>
+          </div>
+          <h4 class="font-extrabold text-base text-stone-900">GS. Phan Văn Trường</h4>
+          <p class="text-xs text-stone-500 leading-relaxed">
+            Tác giả <em>"Chuyện Ta Truyện Tây"</em> — Chuyên gia đàm phán quốc tế, người cố vấn kinh tế truyền cảm hứng sâu rộng cho thế hệ trẻ khởi nghiệp.
+          </p>
+        </div>
+        <div class="p-6 rounded-2xl border border-stone-200 bg-stone-50/50 hover:bg-white hover:border-brand-red hover:shadow-xl transition-all duration-300 text-center space-y-3">
+          <div class="w-16 h-16 rounded-full bg-blue-100 text-blue-700 mx-auto flex items-center justify-center font-bold text-2xl shadow-inner">
+            <span class="material-symbols-outlined text-3xl">ink_pen</span>
+          </div>
+          <h4 class="font-extrabold text-base text-stone-900">Nhà Văn Trung Sỹ</h4>
+          <p class="text-xs text-stone-500 leading-relaxed">
+            Tác giả <em>"Nhà Cũ Trong Phố Cũ"</em> — Nét ký ức Hà Nội hoài niệm, sâu lắng qua từng góc phố rêu phong, mái ngói quen và phận người đôn hậu.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. SECTION: ĐÁNH GIÁ ĐỘC GIẢ (TESTIMONIALS) -->
+  <section id="danh-gia" class="py-16 px-4 bg-[#FAF8F5] border-t border-stone-200">
+    <div class="max-w-7xl mx-auto space-y-10">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-xs font-black uppercase tracking-wider text-brand-red bg-red-50 px-3 py-1 rounded-full">
+          SOCIAL PROOF
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold serif-title text-stone-900">Độc Giả Nói Gì Về DuwcsAnhLib?</h2>
+        <p class="text-xs sm:text-sm text-stone-600">Niềm tin và sự hài lòng của bạn đọc là thước đo giá trị lớn nhất của chúng tôi</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-3">
+          <div class="flex text-amber-400 text-sm">★★★★★</div>
+          <p class="text-xs sm:text-sm text-stone-600 italic leading-relaxed">
+            "Sách được đóng hộp carton rất chắc chắn, mép gáy phẳng phiu không một vết cấn nhỏ. Đặt đơn chiều hôm trước mà trưa hôm sau đã nhận được rồi. Rất hài lòng!"
+          </p>
+          <div class="text-xs font-bold text-stone-900 pt-2 border-t border-stone-100">
+            — Trần Minh Hoàng <span class="text-stone-400 font-normal">(Độc giả tại Hà Nội)</span>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-3">
+          <div class="flex text-amber-400 text-sm">★★★★★</div>
+          <p class="text-xs sm:text-sm text-stone-600 italic leading-relaxed">
+            "Mua bộ truyện tâm lý học đường cho hai bé ở nhà. Sách in màu đẹp, giấy dày dặn và chuẩn sách thật của NXB Trẻ. Đội ngũ tư vấn rất nhiệt tình, chu đáo."
+          </p>
+          <div class="text-xs font-bold text-stone-900 pt-2 border-t border-stone-100">
+            — Nguyễn Lê Thảo Vy <span class="text-stone-400 font-normal">(Độc giả tại TP.HCM)</span>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-3">
+          <div class="flex text-amber-400 text-sm">★★★★★</div>
+          <p class="text-xs sm:text-sm text-stone-600 italic leading-relaxed">
+            "Cuốn 'Lắng Nghe Khi Thị Trường Lên Tiếng' bản dịch rất chuẩn. Shop còn tặng kèm bookmark và bao bì bọc chống sốc kỹ càng. Sẽ tiếp tục ủng hộ tủ sách kinh tế ở đây!"
+          </p>
+          <div class="text-xs font-bold text-stone-900 pt-2 border-t border-stone-100">
+            — Lê Quốc Bảo <span class="text-stone-400 font-normal">(Khởi nghiệp trẻ tại Đà Nẵng)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM CALL TO ACTION BANNER -->
+      <div class="bg-gradient-to-r from-[#C92127] via-[#A5181D] to-[#780E12] text-white rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+        <div class="space-y-2 max-w-xl">
+          <h3 class="text-2xl sm:text-3xl font-extrabold serif-title">Sẵn Sàng Khám Phá Tủ Sách Tri Thức?</h3>
+          <p class="text-red-100 text-xs sm:text-sm leading-relaxed">
+            Hãy bước vào cửa hàng để chọn cho mình hoặc người thân những cuốn sách tinh hoa nhất hôm nay.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="tel:0933543987" class="px-6 py-3.5 bg-yellow-400 hover:bg-yellow-300 text-stone-950 font-black rounded-xl text-xs sm:text-sm shadow-md transition flex items-center gap-2">
+            <span class="material-symbols-outlined text-base">call</span>
+            <span>Hotline: 0933.543.987</span>
+          </a>
+          <button onclick="enterStore()" class="px-6 py-3.5 bg-white/20 hover:bg-white/30 text-white font-bold rounded-xl text-xs sm:text-sm border border-white/30 backdrop-blur-sm transition flex items-center gap-2 cursor-pointer">
+            <span>Vào Cửa Hàng (Shop)</span>
+            <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-stone-900 text-stone-400 text-xs py-10 px-4 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div class="flex items-center gap-3">
+        <img src="assets/site-icon-512.png" alt="DuwcsAnhLib" class="w-8 h-8 rounded-lg object-contain">
+        <span class="font-black text-white uppercase text-sm">DuwcsAnhLib</span>
+        <span>— Hiệu Sách &amp; Thư Viện Tri Thức</span>
+      </div>
+      <div>
+        © 2026 DuwcsAnhLib. Phân phối chính hãng ấn phẩm Nhà xuất bản Trẻ.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Click nút CTA để vào cửa hàng (/shop)
+    function enterStore(cat) {
+      let targetUrl = '/shop';
+      if (cat) {
+        targetUrl = '/shop?cat=' + encodeURIComponent(cat);
+      }
+      window.location.href = targetUrl;
+    }
+  </script>
+
+</body>
+</html>

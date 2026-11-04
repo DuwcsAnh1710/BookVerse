@@ -15,6 +15,254 @@
       <wp:author_display_name>Ban Biên Tập DuwcsAnhLib</wp:author_display_name>
     </wp:author>
     <item>
+      <title>Trang chủ — DuwcsAnhLib</title>
+      <link>http://duwcsanhlib.vn/</link>
+      <dc:creator>duwcsanhlib</dc:creator>
+      <content:encoded><![CDATA[<!-- ================================================================= -->
+<!-- DUWCSANHLIB — HOMEPAGE LANDING PAGE (FLATSOME UX BUILDER)         -->
+<!-- Giao diện tối ưu CRO dành riêng cho Nhà sách trực tuyến           -->
+<!-- ================================================================= -->
+
+<!-- SECTION 1: HERO BANNER SLIDER -->
+[section bg="assets/hero-bookstore-bg.jpg" bg_overlay="rgba(55, 6, 9, 0.90)" padding="80px" padding__sm="40px" class="hero-book-section"]
+  [row style="collapse" width="custom" custom_width="1200px" v_align="middle"]
+    [col span="7" span__sm="12" span__md="7"]
+      <div class="hero-text-wrapper" style="padding-right: 20px;">
+        <span style="background-color: #F59E0B; color: #1C1917; font-size: 11px; font-weight: 800; padding: 4px 14px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 1px; display: inline-block; margin-bottom: 12px;">HỘI SÁCH TRI THỨC 2026</span>
+        <h1 style="color: #FFFFFF; font-family: 'Playfair Display', serif; font-size: 42px; line-height: 1.2; font-weight: 700; margin-bottom: 16px;">Đọc Để Trưởng Thành<br><span style="color: #FDE68A;">&amp; Khai Phóng Tri Thức</span></h1>
+        <p style="color: #FEE2E2; font-size: 15px; line-height: 1.6; margin-bottom: 24px;">Tuyển tập 25 ấn bản tinh hoa thuộc 5 thể loại cốt lõi từ Nhà xuất bản Trẻ. Đóng gói màng co chống cấn móp, giao nhanh tận tay bạn đọc toàn quốc.</p>
+        <div class="hero-actions">
+          [button text="KHÁM PHÁ CỬA HÀNG" link="/cua-hang/" style="primary" color="secondary" size="medium" radius="5"]
+          [button text="SÁCH BÁN CHẠY" link="#bestseller" style="outline" color="white" size="medium" radius="5"]
+        </div>
+      </div>
+    [/col]
+    [col span="5" span__sm="12" span__md="5" align="center"]
+      [ux_image id="" image_size="original" height="380px" image_hover="zoom" link="/cua-hang/"]
+    [/col]
+  [/row]
+[/section]
+
+<!-- SECTION 2: 4 USP SERVICE FEATURES -->
+[section bg_color="#FFFFFF" padding="30px" border="1px 0px 1px 0px" border_color="#E2E8F0"]
+  [row style="divided" col_bg="#FFFFFF" width="custom" custom_width="1200px"]
+    [col span="3" span__sm="6"]
+      [featured_box icon="icon-checkmark" icon_color="#C92127" title="100% SÁCH THẬT" pos="left"]
+        <p style="font-size: 12px; color: #64748B; margin: 0;">Ấn bản chính thức NXB Trẻ</p>
+      [/featured_box]
+    [/col]
+    [col span="3" span__sm="6"]
+      [featured_box icon="icon-gift" icon_color="#10B981" title="ĐÓNG GÓI CHỐNG MÓP" pos="left"]
+        <p style="font-size: 12px; color: #64748B; margin: 0;">Bọc bóng khí &amp; thùng carton</p>
+      [/featured_box]
+    [/col]
+    [col span="3" span__sm="6"]
+      [featured_box icon="icon-shopping-cart" icon_color="#F59E0B" title="MIỄN PHÍ VẬN CHUYỂN" pos="left"]
+        <p style="font-size: 12px; color: #64748B; margin: 0;">Đơn hàng từ 250.000 đ</p>
+      [/featured_box]
+    [/col]
+    [col span="3" span__sm="6"]
+      [featured_box icon="icon-phone" icon_color="#3B82F6" title="HOTLINE: 0933.543.987" pos="left"]
+        <p style="font-size: 12px; color: #64748B; margin: 0;">Tư vấn chu đáo 08:00 - 21:00</p>
+      [/featured_box]
+    [/col]
+  [/row]
+[/section]
+
+<!-- SECTION 3: 5 CHỦ ĐỀ SÁCH TINH TUYỂN (CATEGORY CARDS) -->
+[section bg_color="#FAF8F5" padding="50px" padding__sm="30px"]
+  [row width="custom" custom_width="1200px"]
+    [col span="12" align="center"]
+      [title style="center" text="KHÁM PHÁ THEO THỂ LOẠI" tag_name="h2" color="#1E293B"]
+      <p style="color: #64748B; font-size: 14px; margin-top: -10px;">5 thể loại sách cốt lõi định hình tư duy và bồi đắp tâm hồn</p>
+    [/col]
+  [/row]
+  [row width="custom" custom_width="1200px" col_spacing="small"]
+    [col span="1_5" span__sm="6"]
+      [ux_banner height="180px" bg_color="#991B1B" text_color="light" hover="zoom" link="/danh-muc-san-pham/van-hoc/"]
+        [text_box position_x="50" position_y="50" text_align="center"]
+          <h4 style="margin: 0; color: #FFFFFF; font-weight: 700;">VĂN HỌC</h4>
+          <p style="font-size: 11px; color: #FECACA; margin: 4px 0 0 0;">5 ấn bản tản văn &amp; ký ức</p>
+        [/text_box]
+      [/ux_banner]
+    [/col]
+    [col span="1_5" span__sm="6"]
+      [ux_banner height="180px" bg_color="#065F46" text_color="light" hover="zoom" link="/danh-muc-san-pham/kinh-te/"]
+        [text_box position_x="50" position_y="50" text_align="center"]
+          <h4 style="margin: 0; color: #FFFFFF; font-weight: 700;">KINH TẾ</h4>
+          <p style="font-size: 11px; color: #A7F3D0; margin: 4px 0 0 0;">Quản trị &amp; Khởi nghiệp</p>
+        [/text_box]
+      [/ux_banner]
+    [/col]
+    [col span="1_5" span__sm="6"]
+      [ux_banner height="180px" bg_color="#581C87" text_color="light" hover="zoom" link="/danh-muc-san-pham/tam-ly/"]
+        [text_box position_x="50" position_y="50" text_align="center"]
+          <h4 style="margin: 0; color: #FFFFFF; font-weight: 700;">TÂM LÝ</h4>
+          <p style="font-size: 11px; color: #E9D5FF; margin: 4px 0 0 0;">Chữa lành &amp; Đời sống</p>
+        [/text_box]
+      [/ux_banner]
+    [/col]
+    [col span="1_5" span__sm="6"]
+      [ux_banner height="180px" bg_color="#C2410C" text_color="light" hover="zoom" link="/danh-muc-san-pham/ky-nang/"]
+        [text_box position_x="50" position_y="50" text_align="center"]
+          <h4 style="margin: 0; color: #FFFFFF; font-weight: 700;">KỸ NĂNG</h4>
+          <p style="font-size: 11px; color: #FED7AA; margin: 4px 0 0 0;">Phát triển bản thân</p>
+        [/text_box]
+      [/ux_banner]
+    [/col]
+    [col span="1_5" span__sm="6"]
+      [ux_banner height="180px" bg_color="#1E40AF" text_color="light" hover="zoom" link="/danh-muc-san-pham/thieu-nhi/"]
+        [text_box position_x="50" position_y="50" text_align="center"]
+          <h4 style="margin: 0; color: #FFFFFF; font-weight: 700;">THIẾU NHI</h4>
+          <p style="font-size: 11px; color: #BFDBFE; margin: 4px 0 0 0;">Nuôi dưỡng đạo đức</p>
+        [/text_box]
+      [/ux_banner]
+    [/col]
+  [/row]
+[/section]
+
+<!-- SECTION 4: SÁCH BÁN CHẠY NHẤT (PRODUCT SLIDER) -->
+[section id="bestseller" bg_color="#FFFFFF" padding="50px" padding__sm="30px"]
+  [row width="custom" custom_width="1200px"]
+    [col span="8"]
+      [title style="bold" text="ẤN BẢN ĐƯỢC YÊU THÍCH NHẤT" tag_name="h2" color="#C92127"]
+    [/col]
+    [col span="4" align="right"]
+      [button text="XEM TẤT CẢ 25 SÁCH &rarr;" link="/cua-hang/" style="link" size="medium"]
+    [/col]
+  [/row]
+  [row width="custom" custom_width="1200px"]
+    [col span="12"]
+      [ux_products type="slider" columns="4" columns__sm="2" slider_nav_style="circle" show_rating="true" show_quick_view="true" text_align="left"]
+    [/col]
+  [/row]
+[/section]
+
+<!-- SECTION 5: TÔN CHỈ THƯƠNG HIỆU & CAM KẾT ĐÓNG GÓI -->
+[section bg_color="#FFFBEB" padding="60px" padding__sm="30px" border="1px 0px 1px 0px" border_color="#FDE68A"]
+  [row width="custom" custom_width="1200px" v_align="middle"]
+    [col span="6" span__sm="12"]
+      <div style="padding-right: 20px;">
+        <span style="color: #92400E; font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;">CAM KẾT TỪ DUWCSANHLIB</span>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; color: #78350F; margin: 8px 0 16px 0;">Mỗi Cuốn Sách Đến Tay Bạn Đều Trọn Vẹn Như Mới Rời Nhà In</h2>
+        <p style="color: #451A03; font-size: 14px; line-height: 1.7; margin-bottom: 14px;">Chúng tôi hiểu rằng với người yêu sách, một nếp gấp gáy hay góc bìa cấn móp cũng làm giảm đi niềm vui đọc. Vì vậy, DuwcsAnhLib áp dụng quy chuẩn đóng gói 3 lớp bảo vệ chuyên biệt:</p>
+        <ul style="color: #78350F; font-size: 13px; line-height: 1.8; padding-left: 20px;">
+          <li><strong>Lớp 1:</strong> Màng co chống ẩm và bảo vệ bề mặt bìa sách.</li>
+          <li><strong>Lớp 2:</strong> Bọc xốp bóng khí (bubble wrap) 2-3 lớp bo tròn 4 góc mép.</li>
+          <li><strong>Lớp 3:</strong> Đóng hộp carton 3 lớp cứng cáp dán băng keo niêm phong thương hiệu.</li>
+        </ul>
+        <div style="margin-top: 20px;">
+          [button text="TÌM HIỂU VỀ DUWCSANHLIB" link="/gioi-thieu/" style="outline" color="secondary" radius="4"]
+        </div>
+      </div>
+    [/col]
+    [col span="6" span__sm="12"]
+      [ux_banner height="340px" bg_color="#92400E" text_color="light" radius="8"]
+        [text_box position_x="50" position_y="50" text_align="center"]
+          <h3 style="color: #FDE68A; font-family: 'Playfair Display', serif; font-size: 26px; margin-bottom: 10px;">100% Sách Thật</h3>
+          <p style="color: #FEF3C7; font-size: 14px; max-width: 380px;">"Không kinh doanh sách lậu, sách sao chép trái phép. Tôn trọng bản quyền tác giả là tôn trọng tri thức."</p>
+          <span style="display: inline-block; margin-top: 10px; font-weight: 700; color: #FFFFFF; font-size: 12px;">— BAN BIÊN TẬP DUWCSANHLIB —</span>
+        [/text_box]
+      [/ux_banner]
+    [/col]
+  [/row]
+[/section]
+
+<!-- SECTION 6: TÁC GIẢ TIÊU BIỂU -->
+[section bg_color="#FFFFFF" padding="50px" padding__sm="30px"]
+  [row width="custom" custom_width="1200px"]
+    [col span="12" align="center"]
+      [title style="center" text="GẶP GỠ CÁC TÁC GIẢ TIÊU BIỂU" tag_name="h2" color="#1E293B"]
+      <p style="color: #64748B; font-size: 14px; margin-top: -10px;">Những cây bút tài hoa đồng hành cùng ấn phẩm Nhà xuất bản Trẻ</p>
+    [/col]
+  [/row]
+  [row width="custom" custom_width="1200px"]
+    [col span="4" span__sm="12"]
+      [featured_box icon="icon-user" icon_color="#C92127" title="HỌC GIẢ VƯƠNG HỒNG SỂN" pos="top"]
+        <p style="font-size: 13px; color: #475569; text-align: center;">Tác giả cuốn <em>"Khám Lớn Sài Gòn"</em> — Nhà văn hóa, học giả uyên bác với những trang khảo cứu Nam Bộ sâu sắc.</p>
+      [/featured_box]
+    [/col]
+    [col span="4" span__sm="12"]
+      [featured_box icon="icon-user" icon_color="#C92127" title="GS. PHAN VĂN TRƯỜNG" pos="top"]
+        <p style="font-size: 13px; color: #475569; text-align: center;">Tác giả <em>"Chuyện Ta Truyện Tây"</em> — Chuyên gia đàm phán quốc tế, người truyền cảm hứng cho nhiều thế hệ trẻ Việt Nam.</p>
+      [/featured_box]
+    [/col]
+    [col span="4" span__sm="12"]
+      [featured_box icon="icon-user" icon_color="#C92127" title="NHÀ VĂN TRUNG SỸ" pos="top"]
+        <p style="font-size: 13px; color: #475569; text-align: center;">Tác giả <em>"Nhà Cũ Trong Phố Cũ"</em> — Ký ức Hà Nội đằm thắm qua từng góc phố, mái ngói và phận người.</p>
+      [/featured_box]
+    [/col]
+  [/row]
+[/section]
+
+<!-- SECTION 7: GÓC ĐỌC & ĐIỂM SÁCH (BLOG POSTS) -->
+[section bg_color="#F8FAFC" padding="50px" padding__sm="30px"]
+  [row width="custom" custom_width="1200px"]
+    [col span="8"]
+      [title style="bold" text="GÓC ĐỌC & ĐIỂM SÁCH" tag_name="h2" color="#1E293B"]
+    [/col]
+    [col span="4" align="right"]
+      [button text="XEM TẤT CẢ BÀI VIẾT &rarr;" link="/blog/" style="link" size="medium"]
+    [/col]
+  [/row]
+  [row width="custom" custom_width="1200px"]
+    [col span="12"]
+      [blog_posts posts="3" columns="3" columns__sm="1" type="row" style="shade" readmore="Đọc bài viết" text_align="left"]
+    [/col]
+  [/row]
+[/section]
+
+<!-- SECTION 8: CẢM NHẬN ĐỘC GIẢ & CHÂN TRANG CTA -->
+[section bg_color="#FFFFFF" padding="50px" padding__sm="30px"]
+  [row width="custom" custom_width="1200px"]
+    [col span="12" align="center"]
+      [title style="center" text="ĐỘC GIẢ NÓI GÌ VỀ DUWCSANHLIB?" tag_name="h2" color="#1E293B"]
+    [/col]
+  [/row]
+  [row width="custom" custom_width="1200px"]
+    [col span="4" span__sm="12"]
+      [testimonial name="Trần Minh Hoàng" company="Độc giả tại Hà Nội"]
+        "Sách được đóng hộp carton rất chắc chắn, mép gáy phẳng phiu không một vết cấn. Đặt đơn chiều hôm trước mà trưa hôm sau đã nhận được rồi. Rất hài lòng!"
+      [/testimonial]
+    [/col]
+    [col span="4" span__sm="12"]
+      [testimonial name="Nguyễn Lê Thảo Vy" company="Độc giả tại TP.HCM"]
+        "Mua bộ truyện tâm lý học đường cho hai bé ở nhà. Sách in màu đẹp, giấy dày dặn và chuẩn sách thật của NXB Trẻ. DuwcsAnhLib tư vấn rất nhiệt tình."
+      [/testimonial]
+    [/col]
+    [col span="4" span__sm="12"]
+      [testimonial name="Lê Quốc Bảo" company="Khởi nghiệp trẻ"]
+        "Cuốn 'Lắng Nghe Khi Thị Trường Lên Tiếng' bản dịch rất chuẩn. Shop còn tặng kèm bookmark và bao bì bọc chống sốc kỹ càng. Sẽ tiếp tục ủng hộ tủ sách kinh tế ở đây!"
+      [/testimonial]
+    [/col]
+  [/row]
+  [row width="custom" custom_width="1000px" padding="30px 0px 0px 0px"]
+    [col span="12" align="center"]
+      <div style="background: linear-gradient(135deg, #C92127 0%, #991B1B 100%); padding: 36px 24px; border-radius: 12px; color: #FFFFFF;">
+        <h3 style="color: #FFFFFF; font-size: 24px; font-weight: 700; margin-bottom: 8px;">Bạn Cần Tư Vấn Chọn Sách Phù Hợp?</h3>
+        <p style="color: #FEE2E2; font-size: 14px; margin-bottom: 18px;">Đội ngũ biên tập DuwcsAnhLib luôn sẵn sàng hỗ trợ bạn tìm kiếm cuốn sách ý nghĩa nhất.</p>
+        <span style="font-size: 20px; font-weight: 800; color: #FDE68A; display: inline-block; margin-right: 15px;">HOTLINE: 0933 543 987</span>
+        [button text="VÀO CỬA HÀNG NGAY" link="/cua-hang/" style="secondary" color="white" size="medium" radius="5"]
+      </div>
+    [/col]
+  [/row]
+[/section]
+]]></content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>2000</wp:post_id>
+      <wp:post_date>2026-11-04 10:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 03:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>trang-chu</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
       <title>Về DuwcsAnhLib</title>
       <link>http://duwcsanhlib.vn/gioi-thieu/</link>
       <dc:creator>duwcsanhlib</dc:creator>

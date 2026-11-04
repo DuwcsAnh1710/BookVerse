@@ -76,7 +76,10 @@ def run_all_checks():
     tree = ET.parse(xml_path)
     root = tree.getroot()
     items = root.findall('./channel/item')
-    check(len(items) == 8, f"Tệp XML chứa đúng 8 mục nội dung (Thực tế: {len(items)})")
+    check(len(items) >= 8, f"Tệp XML chứa đầy đủ các trang và bài viết (Thực tế: {len(items)} mục)")
+    check((content_dir / 'trang-chu-flatsome-shortcodes.txt').exists(), "Mã shortcode Trang chủ Flatsome tồn tại")
+    check((content_dir / 'trang-chu.md').exists(), "Tài liệu cấu trúc Trang chủ trang-chu.md tồn tại")
+    check((ROOT / 'docs' / '03-huong-dan-thiet-lap-landingpage-flatsome.md').exists(), "Hướng dẫn thiết lập Landing page Flatsome tồn tại")
     
     # 5. Kiểm tra giá và tồn kho
     all_prices_valid = all(int(p['Regular price']) > 0 and int(p['Stock']) > 0 for p in products)
