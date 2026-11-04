@@ -51,6 +51,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DuwcsAnhLib — Hiệu Sách & Thư Viện Tri Thức</title>
+  <!-- Brand Favicon & App Icons -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Material Symbols -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -109,9 +114,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       
       <!-- Brand Logo -->
       <div class="flex items-center gap-3 cursor-pointer shrink-0" onclick="showView('home')">
-        <div class="w-11 h-11 rounded-xl bg-brand-red text-white flex items-center justify-center font-black text-xl shadow-md border-2 border-amber-300">
-          DA
-        </div>
+        <img src="/assets/logo-header-symbol.png" alt="DuwcsAnhLib" class="h-12 w-auto object-contain hover:scale-105 transition-transform">
         <div>
           <span class="text-2xl font-black tracking-wider text-brand-red uppercase leading-none block">DuwcsAnh<span class="text-amber-600">Lib</span></span>
           <span class="text-[10px] text-gray-500 font-bold tracking-widest uppercase block mt-0.5">Hiệu Sách & Thư Viện Tri Thức</span>
@@ -736,8 +739,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       
       <!-- Col 1 -->
       <div class="space-y-3">
-        <div class="flex items-center gap-2">
-          <div class="w-8 h-8 rounded-lg bg-brand-red text-white flex items-center justify-center font-bold">DA</div>
+        <div class="flex items-center gap-2 cursor-pointer" onclick="showView('home')">
+          <img src="/assets/site-icon-512.png" alt="DuwcsAnhLib" class="w-8 h-8 rounded-lg object-contain shadow-sm">
           <span class="font-black text-base text-brand-red uppercase">DuwcsAnhLib</span>
         </div>
         <p class="text-xs text-gray-500 leading-relaxed">
@@ -1231,6 +1234,15 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
 class DuwcsAnhLibServer(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
+        if self.path == '/favicon.ico':
+            ico_file = ASSETS_DIR / 'favicon.ico'
+            if ico_file.exists():
+                self.send_response(200)
+                self.send_header('Content-Type', 'image/x-icon')
+                self.end_headers()
+                self.wfile.write(ico_file.read_bytes())
+                return
+
         if self.path.startswith('/assets/'):
             rel_path = self.path[len('/assets/'):]
             target_file = ASSETS_DIR / rel_path
@@ -1238,8 +1250,10 @@ class DuwcsAnhLibServer(http.server.SimpleHTTPRequestHandler):
                 self.send_response(200)
                 if target_file.suffix == '.png':
                     self.send_header('Content-Type', 'image/png')
-                elif target_file.suffix == '.jpg':
+                elif target_file.suffix in ['.jpg', '.jpeg']:
                     self.send_header('Content-Type', 'image/jpeg')
+                elif target_file.suffix == '.ico':
+                    self.send_header('Content-Type', 'image/x-icon')
                 self.end_headers()
                 self.wfile.write(target_file.read_bytes())
                 return
@@ -1264,17 +1278,26 @@ class DuwcsAnhLibServer(http.server.SimpleHTTPRequestHandler):
 
 def start_server(port=8080):
     handler = DuwcsAnhLibServer
-    with socketserver.TCPServer(("", port), handler) as httpd:
-        print("=" * 60)
-        print(f" DUWCSANHLIB PRODUCTION-GRADE LOCAL SERVER STARTED!")
-        print(f" URL: http://localhost:{port}")
-        print(f" Hotline: 0933.543.987")
-        print("=" * 60)
-        try:
-            webbrowser.open(f"http://localhost:{port}")
-        except Exception:
-            pass
-        httpd.serve_forever()
+    socketserver.TCPServer.allow_reuse_address = True
+    try:
+        with socketserver.TCPServer(("", port), handler) as httpd:
+            print("=" * 60)
+            print(f" DUWCSANHLIB PRODUCTION-GRADE LOCAL SERVER STARTED!")
+            print(f" URL: http://localhost:{port}")
+            print(f" Hotline: 0933.543.987")
+            print("=" * 60)
+            try:
+                webbrowser.open(f"http://localhost:{port}")
+            except Exception:
+                pass
+            httpd.serve_forever()
+    except OSError as e:
+        if "10048" in str(e):
+            alt_port = port + 1
+            print(f"[!] Cổng {port} đang bận, tự động chuyển sang cổng {alt_port}...")
+            start_server(alt_port)
+        else:
+            raise
 
 if __name__ == '__main__':
     port = 8080
