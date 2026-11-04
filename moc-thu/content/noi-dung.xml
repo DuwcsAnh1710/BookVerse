@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:wp="http://wordpress.org/export/1.2/" version="2.0">
+  <channel>
+    <title>Mộc Thư — nội dung học tập</title>
+    <link>https://mocthu.example</link>
+    <description>Nội dung nguyên bản, không kèm sản phẩm hay ảnh từ xa</description>
+    <language>vi</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://mocthu.example</wp:base_site_url>
+    <wp:base_blog_url>https://mocthu.example</wp:base_blog_url>
+    <wp:author>
+      <wp:author_id>1</wp:author_id>
+      <wp:author_login>moc-thu-demo</wp:author_login>
+      <wp:author_email>demo@mocthu.example</wp:author_email>
+      <wp:author_display_name>Mộc Thư — mô hình học tập</wp:author_display_name>
+    </wp:author>
+    <item>
+      <title>Về Mộc Thư</title>
+      <link>https://mocthu.example/gioi-thieu/</link>
+      <dc:creator>moc-thu-demo</dc:creator>
+      <content:encoded>&lt;p&gt;Mộc Thư là ý tưởng về một hiệu sách nhỏ dành cho người muốn giữ lại một khoảng yên giữa lịch học, công việc và những thông báo trên màn hình. Chúng tôi chọn sách giấy vì thích cảm giác lật một trang, đặt dấu ở một đoạn đang nghĩ dở và trở lại với cuốn sách vào ngày hôm sau.&lt;/p&gt;
+&lt;p&gt;Ở đây, bạn có thể tìm một câu chuyện để đọc cuối tuần, một cuốn sách để hiểu thêm về cách làm việc hoặc một món quà nhỏ cho người đang tập đọc. Năm nhóm sách gồm Văn học, Kỹ năng và phát triển bản thân, Kinh tế và kinh doanh, Tâm lý và đời sống, Thiếu nhi. Bạn không cần đọc thật nhanh hay thật nhiều để bắt đầu.&lt;/p&gt;
+&lt;p&gt;Tên “Mộc Thư” gợi đến sự giản dị: thông tin sách rõ ràng, bố cục dễ xem và những gợi ý vừa đủ. Chúng tôi muốn mỗi lần chọn sách là một lần bạn biết thêm mình đang quan tâm điều gì.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lưu ý: Mộc Thư trong website này là mô hình học tập cá nhân, chưa phải cửa hàng đang hoạt động. Giá, tồn kho, đặt hàng, vận chuyển và thông tin liên hệ đều phục vụ thực hành. Không có giao dịch hoặc giao hàng thật.&lt;/strong&gt;&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>1001</wp:post_id>
+      <wp:post_date>2026-11-04 09:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 02:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>gioi-thieu</wp:post_name>
+      <wp:status>draft</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Liên hệ</title>
+      <link>https://mocthu.example/lien-he/</link>
+      <dc:creator>moc-thu-demo</dc:creator>
+      <content:encoded>&lt;p&gt;Đây là thông tin minh họa của bài thực hành Mộc Thư, không phải đầu mối bán hàng đang hoạt động.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Tên hiển thị: Mộc Thư — cửa hàng sách mô phỏng.&lt;/li&gt;&lt;li&gt;Địa chỉ: Góc đọc Mộc Thư, khu thực hành — địa chỉ giả lập, không tiếp khách.&lt;/li&gt;&lt;li&gt;Email minh họa: hello@mocthu.example — không nhận thư thật.&lt;/li&gt;&lt;li&gt;Điện thoại: không cung cấp số liên hệ thật trong mô hình.&lt;/li&gt;&lt;li&gt;Giờ hoạt động minh họa: 9:00–17:00, thứ Hai đến thứ Sáu.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Bạn có thể thử đặt đơn và xem trạng thái bằng tài khoản thử nghiệm. Không nhập thông tin nhạy cảm, không gửi tiền và không chờ giao hàng. Khi trình bày bài, người thực hiện sẽ hướng dẫn trực tiếp; thông tin cá nhân của người thực hiện chỉ được bổ sung khi chính người đó quyết định công khai.&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>1002</wp:post_id>
+      <wp:post_date>2026-11-04 09:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 02:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>lien-he</wp:post_name>
+      <wp:status>draft</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Giao hàng — chính sách mô phỏng</title>
+      <link>https://mocthu.example/giao-hang/</link>
+      <dc:creator>moc-thu-demo</dc:creator>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;Chỉ dùng cho bài học; chưa áp dụng cho hoạt động kinh doanh. Cần rà soát nội dung và quy định liên quan trước khi bán hàng thật.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Website mô phỏng việc nhận đơn sách giấy tại Việt Nam. Phí giao hàng tiêu chuẩn là 25.000đ mỗi đơn, không nhân theo số lượng cuốn sách. Tổng tiền trên trang thanh toán gồm tiền sách và phí giao hàng được hiển thị trước khi xác nhận.&lt;/p&gt;
+&lt;p&gt;Trong tình huống học tập, thời gian dự kiến được mô tả là 3–5 ngày làm việc sau bước xác nhận. Không có đơn vị vận chuyển thật tham gia và không có cam kết giao hàng. Đơn ngoài vùng Việt Nam không được cung cấp phương thức vận chuyển trong cấu hình bài.&lt;/p&gt;
+&lt;p&gt;COD và chuyển khoản trên website đều là phương thức thử nghiệm. Người thực hiện có thể thay đổi trạng thái đơn để minh họa xử lý, nhưng không thu tiền, không yêu cầu chuyển khoản và không gửi kiện hàng.&lt;/p&gt;
+&lt;p&gt;Nếu cần sửa địa chỉ thử hoặc hủy đơn khi thực hành, trao đổi trực tiếp với người hướng dẫn bài. Không dùng địa chỉ hoặc số điện thoại của người khác để thử hệ thống.&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>1003</wp:post_id>
+      <wp:post_date>2026-11-04 09:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 02:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>giao-hang</wp:post_name>
+      <wp:status>draft</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Đổi trả — chính sách mô phỏng</title>
+      <link>https://mocthu.example/doi-tra/</link>
+      <dc:creator>moc-thu-demo</dc:creator>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;Tài liệu này mô tả tình huống học tập, không phải cam kết dịch vụ của cửa hàng thật. Cần rà soát trước khi kinh doanh.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Trong bài mô phỏng, các tình huống tiếp nhận yêu cầu đổi trả gồm giao nhầm tựa hoặc ấn bản, thiếu sách và sách có lỗi in. Khoảng thời gian tiếp nhận minh họa là 7 ngày kể từ ngày giao giả lập. Đây là tham số bài tập, không được trình bày như thời hạn pháp luật bắt buộc.&lt;/p&gt;
+&lt;p&gt;Người học ghi mã đơn, sản phẩm và lý do vào ghi chú xử lý; không tải ảnh giấy tờ cá nhân. Quản trị viên đối chiếu đơn, xác định số lượng và lựa chọn hủy, hoàn trả hoặc đổi sách theo kịch bản đang thực hành.&lt;/p&gt;
+&lt;p&gt;Nếu hoàn kho trong WooCommerce, phải kiểm tra số lượng được cộng lại đúng một lần. Chuyển trạng thái sang hoàn tiền trên hệ thống không đồng nghĩa ngân hàng đã hoàn tiền. Mô hình này không thực hiện hoàn tiền thật vì chưa thu tiền thật.&lt;/p&gt;
+&lt;p&gt;Các trường hợp ngoài kịch bản được ghi nhận để trao đổi khi bảo vệ bài; không tự khẳng định khách mất quyền lợi chỉ vì một trạng thái kỹ thuật của website.&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>1004</wp:post_id>
+      <wp:post_date>2026-11-04 09:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 02:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>doi-tra</wp:post_name>
+      <wp:status>draft</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Bảo mật và dữ liệu trong bài thực hành</title>
+      <link>https://mocthu.example/bao-mat/</link>
+      <dc:creator>moc-thu-demo</dc:creator>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;Website Mộc Thư là mô hình học tập local. Chính sách mẫu này cần được rà soát trước khi triển khai kinh doanh hoặc mở truy cập công khai.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;WordPress và WooCommerce lưu dữ liệu tài khoản, giỏ hàng, địa chỉ thử, nội dung đơn và trạng thái xử lý để minh họa quy trình bán sách. Cookie có thể được dùng cho đăng nhập và duy trì giỏ hàng. Bài này không chủ động tích hợp quảng cáo, công cụ theo dõi bên ngoài hoặc thanh toán trực tuyến.&lt;/p&gt;
+&lt;p&gt;Chỉ sử dụng tên, email và địa chỉ giả lập khi thử. Không nhập số thẻ, số tài khoản ngân hàng thật, giấy tờ tùy thân hoặc mật khẩu dùng ở nơi khác. Người quản trị bài có quyền xem đơn; khách chỉ được xem đơn gắn với tài khoản của mình. Phân quyền này cần được kiểm tra bằng hai tài khoản thử khác nhau.&lt;/p&gt;
+&lt;p&gt;Dữ liệu nằm trong môi trường WordPress trên máy thực hành và các bản sao lưu do người thực hiện quản lý. Nếu xuất bản sao Local, hãy giữ riêng vì bản sao có thể chứa dữ liệu tài khoản và đơn. Không đăng công khai cơ sở dữ liệu, thông tin đăng nhập hoặc purchase code của theme.&lt;/p&gt;
+&lt;p&gt;Sau khi hoàn thành môn học, người thực hiện có thể xóa các tài khoản/đơn thử và bản sao không còn cần thiết. Nếu cần minh họa yêu cầu truy cập hoặc xóa dữ liệu, dùng công cụ Privacy của WordPress và kiểm tra phần dữ liệu đơn hàng được lưu theo cấu hình. Chính sách này không hứa xóa mọi bản sao tự động.&lt;/p&gt;
+&lt;p&gt;Đầu mối minh họa: hello@mocthu.example, không phải hộp thư nhận yêu cầu thật. Khi chuyển sang kinh doanh, cần bổ sung chủ thể vận hành, đầu mối thật, phạm vi xử lý, thời hạn lưu trữ và các nghĩa vụ phù hợp.&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>1005</wp:post_id>
+      <wp:post_date>2026-11-04 09:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 02:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>bao-mat</wp:post_name>
+      <wp:status>draft</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Bắt đầu đọc lại bằng mười phút mỗi ngày</title>
+      <link>https://mocthu.example/blog-01/</link>
+      <dc:creator>moc-thu-demo</dc:creator>
+      <content:encoded>&lt;p&gt;Có lúc ta mua một cuốn sách với nhiều hào hứng rồi để nó nằm yên cạnh bàn suốt mấy tuần. Mỗi khi nhìn thấy, ta lại nghĩ cần một buổi tối thật rảnh mới đọc được. Nhưng lịch học và công việc hiếm khi tự chừa ra khoảng trống như vậy. Có thể bắt đầu nhỏ hơn: mười phút, ở một thời điểm vốn đã có trong ngày.&lt;/p&gt;
+&lt;h2&gt;Chọn một thời điểm cụ thể&lt;/h2&gt;
+&lt;p&gt;“Khi rảnh sẽ đọc” là lời hẹn khó nhớ. Bạn có thể đặt sách cạnh chỗ uống nước sau bữa tối hoặc trong túi mang đến trường. Sau khi làm xong một việc quen thuộc, mở sách và đọc vài trang. Đừng vội biến buổi đọc đầu tiên thành một bài kiểm tra khả năng tập trung.&lt;/p&gt;
+&lt;p&gt;Nếu hôm đó chỉ đọc được năm phút, hãy đặt dấu trang rồi dừng. Việc quay lại vào ngày mai quan trọng hơn một con số đẹp trong sổ theo dõi. Một cuốn sách có chương ngắn hoặc các bài độc lập có thể phù hợp với lịch đang bận.&lt;/p&gt;
+&lt;h2&gt;Để điện thoại ra ngoài tầm tay&lt;/h2&gt;
+&lt;p&gt;Bạn không cần một căn phòng đọc hoàn hảo. Một chỗ ngồi đủ sáng và ít phải với tay kiểm tra thông báo đã là khởi đầu tốt. Có thể đặt hẹn giờ trước rồi úp điện thoại xuống, hoặc dùng đồng hồ có sẵn. Nếu phải đọc ở nơi đông người, chọn đoạn ngắn và chấp nhận rằng đôi khi mình cần đọc lại.&lt;/p&gt;
+&lt;h2&gt;Ghi một điều còn đọng lại&lt;/h2&gt;
+&lt;p&gt;Sau buổi đọc, thử viết một câu: “Hôm nay mình nghĩ nhiều về…” Câu ấy có thể là điều bạn đồng ý, điều khiến bạn thắc mắc hoặc một chi tiết làm bạn nhớ đến chuyện của mình. Không nhất thiết tóm tắt cả chương; ghi chép là cách giữ một cuộc trò chuyện với cuốn sách.&lt;/p&gt;
+&lt;p&gt;Khi không còn thấy phù hợp, bạn cũng có thể đổi cuốn khác. Một lựa chọn chưa đúng thời điểm không phải thất bại. Sau một tuần, nhìn lại xem lúc nào bạn đọc dễ chịu nhất và điều chỉnh từ đó. Góc đọc của mỗi người hình thành bằng những lần quay lại như thế.&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>1006</wp:post_id>
+      <wp:post_date>2026-11-04 09:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 02:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>blog-01</wp:post_name>
+      <wp:status>draft</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Chọn sách tặng một người mà bạn chưa biết rõ gu đọc</title>
+      <link>https://mocthu.example/blog-02/</link>
+      <dc:creator>moc-thu-demo</dc:creator>
+      <content:encoded>&lt;p&gt;Tặng sách thường bắt đầu bằng một ý định dễ thương: muốn chia sẻ điều mình thích. Khó khăn xuất hiện khi cuốn sách mình yêu lại không hợp người nhận. Trước khi chọn một tựa đang nổi bật, hãy nghĩ về người sẽ mở món quà ấy: họ thường nói đến điều gì, đang bận việc gì và có thích đọc sách giấy không?&lt;/p&gt;
+&lt;h2&gt;Hỏi một câu nhẹ nhàng&lt;/h2&gt;
+&lt;p&gt;Bạn có thể hỏi gần đây họ đọc gì hoặc thích xem những câu chuyện thuộc chủ đề nào. Câu trả lời không cần dẫn thẳng đến tên sách. Một người thích kể chuyện thành phố có thể hứng thú với tản văn về nơi chốn; người đang học thiết kế có thể muốn nghe chuyện nghề. Tránh suy diễn rằng ai vừa gặp khó khăn cũng muốn nhận một cuốn sách khuyên phải thay đổi bản thân.&lt;/p&gt;
+&lt;h2&gt;Xem thử cách cuốn sách được trình bày&lt;/h2&gt;
+&lt;p&gt;Mở mục lục và đọc vài trang nếu có bản xem thử hợp lệ. Chương dài hay ngắn? Chữ có dễ nhìn không? Nội dung là truyện, tiểu luận hay hướng dẫn thực hành? Những điều này giúp bạn hình dung món quà sẽ được dùng thế nào, nhất là khi người nhận ít có thời gian ngồi đọc lâu.&lt;/p&gt;
+&lt;p&gt;Đừng chỉ so số trang và giá. Với sách dịch hoặc tái bản, kiểm tra đúng tác giả, dịch giả nếu có, nhà xuất bản và ấn bản. Hai trang bán cùng một tên sách có thể đang giới thiệu hai bản khác nhau. Ảnh đẹp cũng chưa đủ để xác định quyển sách sẽ nhận.&lt;/p&gt;
+&lt;h2&gt;Viết lời đề tặng có chỗ cho người nhận&lt;/h2&gt;
+&lt;p&gt;Một lời nhắn ngắn giải thích vì sao bạn nghĩ đến họ thường có ý nghĩa hơn lời khẳng định rằng cuốn này sẽ thay đổi cuộc đời. Bạn có thể viết vào thiệp rời để người nhận giữ riêng, cho mượn hoặc đổi sách khi cần. Đừng đặt áp lực phải đọc xong rồi báo cảm nhận.&lt;/p&gt;
+&lt;p&gt;Nếu vẫn phân vân, rủ nhau chọn sách cũng là một món quà. Bạn trả lời được điều quan trọng nhất: món quà dành cho sở thích của người nhận, và bạn sẵn lòng tìm hiểu sở thích ấy. Cuốn sách khi đó có thêm một kỷ niệm nhỏ trước cả trang đầu tiên.&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>1007</wp:post_id>
+      <wp:post_date>2026-11-04 09:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 02:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>blog-02</wp:post_name>
+      <wp:status>draft</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+    <item>
+      <title>Một góc đọc nhỏ trong phòng trọ</title>
+      <link>https://mocthu.example/blog-03/</link>
+      <dc:creator>moc-thu-demo</dc:creator>
+      <content:encoded>&lt;p&gt;Phòng trọ thường phải làm nhiều việc cùng lúc: chỗ ngủ, bàn học, nơi ăn tối và đôi khi cả góc làm việc. Vì thế, “góc đọc” không nhất thiết là một chiếc ghế mới hay một giá sách lớn. Nó có thể chỉ là phần bàn được dọn trống sau giờ học, đủ để đặt cuốn sách đang đọc và một ly nước ở khoảng cách an toàn.&lt;/p&gt;
+&lt;h2&gt;Bắt đầu từ đồ đang có&lt;/h2&gt;
+&lt;p&gt;Chọn chỗ có ánh sáng dễ chịu, tư thế ngồi vừa vặn và ít phải di chuyển đồ mỗi lần dùng. Thử ngồi đọc một lúc trước khi quyết định mua thêm gì. Nếu phải kê sách lên gối hoặc chồng hộp để thấy thoải mái, bạn sẽ biết rõ hơn thứ mình cần thay đổi.&lt;/p&gt;
+&lt;p&gt;Đừng đặt quá nhiều sách đang đọc cùng lúc trên bàn nếu điều đó khiến bạn phân tâm. Một cuốn đang đọc và một cuốn muốn đọc tiếp thường đã đủ cho góc nhỏ. Những sách còn lại có thể xếp gọn ở nơi khô ráo, tránh chỗ dễ bị nước bắn hoặc nắng chiếu lâu.&lt;/p&gt;
+&lt;h2&gt;Dành chỗ cho việc ghi chép&lt;/h2&gt;
+&lt;p&gt;Một tờ giấy kẹp trong sách có thể làm dấu trang và nơi ghi câu hỏi. Nếu không muốn viết trực tiếp lên sách, ghi số trang cùng vài từ khóa vào sổ riêng. Khi cho bạn mượn sách, bạn vẫn giữ được những suy nghĩ của mình mà không cần dán nhiều giấy nhớ.&lt;/p&gt;
+&lt;p&gt;Ở phòng chung, có thể thống nhất một khoảng thời gian yên tĩnh ngắn với bạn cùng phòng. Nếu không làm được, hãy chọn nội dung có thể đọc theo từng phần. Góc đọc nên thích nghi với sinh hoạt thực tế, không trở thành thêm một quy tắc khiến mọi người khó chịu.&lt;/p&gt;
+&lt;h2&gt;Dọn lại sau mỗi lần đọc&lt;/h2&gt;
+&lt;p&gt;Đặt dấu, cất bút và trả đồ dùng về chỗ. Một thao tác nhỏ giúp lần sau bạn không cần bắt đầu bằng việc dọn dẹp. Sau vài ngày, nhìn xem thứ gì thật sự được sử dụng và bớt đi những món chỉ để trang trí.&lt;/p&gt;
+&lt;p&gt;Góc đọc sẽ đẹp theo cách bạn dùng nó: một mép trang đã đánh dấu, cuốn sổ có câu hỏi dở dang và chỗ ngồi luôn có thể trở lại. Không cần chờ căn phòng rộng hơn mới dành được một khoảng thời gian cho sách.&lt;/p&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>1008</wp:post_id>
+      <wp:post_date>2026-11-04 09:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-04 02:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>blog-03</wp:post_name>
+      <wp:status>draft</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+  </channel>
+</rss>

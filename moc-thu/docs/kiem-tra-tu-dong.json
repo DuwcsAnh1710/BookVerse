@@ -1,0 +1,793 @@
+{
+  "date": "2026-11-04",
+  "scope": "Static data/artifact checks only; no WordPress, WooCommerce or Flatsome runtime",
+  "checks": [
+    {
+      "check": "san-pham.csv UTF-8 BOM",
+      "result": "PASS"
+    },
+    {
+      "check": "nguon-sach.csv UTF-8 BOM",
+      "result": "PASS"
+    },
+    {
+      "check": "25 sản phẩm và 25 nguồn",
+      "result": "PASS"
+    },
+    {
+      "check": "SKU không trùng",
+      "result": "PASS"
+    },
+    {
+      "check": "5 danh mục, mỗi nhóm 5 sách",
+      "result": "PASS"
+    },
+    {
+      "check": "CSV không lệch cột",
+      "result": "PASS"
+    },
+    {
+      "check": "Không hotlink ảnh",
+      "result": "PASS"
+    },
+    {
+      "check": "Sản phẩm đơn giản, không backorder, thuế demo tắt",
+      "result": "PASS"
+    },
+    {
+      "check": "5 sản phẩm nổi bật",
+      "result": "PASS"
+    },
+    {
+      "check": "Không nhập đánh giá khách hàng",
+      "result": "PASS"
+    },
+    {
+      "check": "Nguồn nội bộ tách khỏi mô tả khách hàng",
+      "result": "PASS"
+    },
+    {
+      "check": "Mô tả không có script/iframe/form",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-001 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-001 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-001 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-001 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-001 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-001 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-001 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-002 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-002 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-002 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-002 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-002 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-002 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-002 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-003 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-003 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-003 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-003 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-003 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-003 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-003 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-004 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-004 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-004 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-004 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-004 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-004 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-004 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-005 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-005 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-005 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-005 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-005 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-005 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-005 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-006 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-006 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-006 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-006 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-006 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-006 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-006 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-007 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-007 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-007 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-007 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-007 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-007 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-007 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-008 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-008 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-008 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-008 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-008 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-008 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-008 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-009 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-009 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-009 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-009 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-009 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-009 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-009 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-010 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-010 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-010 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-010 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-010 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-010 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-010 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-011 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-011 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-011 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-011 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-011 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-011 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-011 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-012 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-012 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-012 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-012 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-012 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-012 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-012 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-013 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-013 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-013 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-013 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-013 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-013 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-013 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-014 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-014 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-014 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-014 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-014 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-014 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-014 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-015 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-015 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-015 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-015 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-015 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-015 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-015 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-016 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-016 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-016 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-016 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-016 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-016 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-016 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-017 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-017 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-017 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-017 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-017 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-017 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-017 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-018 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-018 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-018 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-018 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-018 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-018 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-018 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-019 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-019 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-019 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-019 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-019 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-019 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-019 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-020 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-020 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-020 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-020 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-020 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-020 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-020 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-021 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-021 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-021 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-021 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-021 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-021 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-021 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-022 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-022 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-022 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-022 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-022 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-022 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-022 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-023 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-023 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-023 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-023 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-023 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-023 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-023 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-024 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-024 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-024 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-024 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-024 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-024 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-024 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-025 ISBN checksum (không thay thế đối chiếu nguồn)",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-025 ánh xạ nguồn/sản phẩm",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-025 giá và tồn giả lập hợp lệ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-025 số trang và năm khớp hồ sơ",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-025 kích thước không bị tách theo dấu phẩy",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-025 URL nguồn NXB cùng ấn bản",
+      "result": "PASS"
+    },
+    {
+      "check": "MT-025 ảnh PNG 600×900 đọc được",
+      "result": "PASS"
+    },
+    {
+      "check": "WXR parse được, 8 nội dung",
+      "result": "PASS"
+    },
+    {
+      "check": "WXR 5 trang và 3 blog",
+      "result": "PASS"
+    },
+    {
+      "check": "WXR nhập dạng nháp",
+      "result": "PASS"
+    },
+    {
+      "check": "WXR chỉ nội dung HTML cơ bản",
+      "result": "PASS"
+    },
+    {
+      "check": "Tiếng Việt giữ nguyên qua vòng đọc CSV",
+      "result": "PASS"
+    },
+    {
+      "check": "Phép tính 2 ca checkout tham chiếu (không chạy checkout)",
+      "result": "PASS"
+    },
+    {
+      "check": "Tương phản #2D241E trên #FAF6EE: 14.09:1",
+      "result": "PASS"
+    },
+    {
+      "check": "Tương phản #675B50 trên #FAF6EE: 6.11:1",
+      "result": "PASS"
+    },
+    {
+      "check": "Tương phản #FFFFFF trên #6B4226: 8.63:1",
+      "result": "PASS"
+    }
+  ],
+  "summary": {
+    "PASS": 196
+  }
+}
