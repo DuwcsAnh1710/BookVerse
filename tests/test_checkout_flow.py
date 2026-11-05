@@ -1,31 +1,36 @@
 """
-Master Verification Test Suite for DuwcsAnhLib
-Tests:
+Automated End-to-End Headless Verification Test Suite for DuwcsAnhLib
+Verifies the complete frontend user flow using Microsoft Edge Headless:
 1. Mobile Responsiveness (Viewport 440x956 iPhone 16 Pro Max without overflow)
 2. Logo & Header Elements (logo-header.png, search sync, wishlist badge)
 3. Taskbar Golden Amber Highlight on All 6 Tabs
-4. DANH MỤC SẢN PHẨM Mega Menu Dropdown Toggle & Category Filtering
+4. DANH MUC SAN PHAM Mega Menu Dropdown Toggle & Category Filtering
 5. Landing Page Onboarding & Store Entry Transition
 6. Flatsome Checkout Flow (Empty state, Cart listing, Voucher calculation)
 7. MoMo QR & COD Order Placement with Dynamic QR & 1-Click Copy
 """
-import sys
+import unittest
 import subprocess
+import sys
+import re
 from pathlib import Path
 
-sys.stdout.reconfigure(encoding='utf-8')
+ROOT = Path(__file__).resolve().parent.parent
 
-ROOT = Path("d:/VSCode/HKDN/BookVerse")
-edge_path = r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
-html_path = ROOT / 'duwcsanhlib-static-web' / 'index.html'
+class TestCheckoutFlow(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.edge_path = r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
+        cls.html_path = ROOT / 'duwcsanhlib-static-web' / 'index.html'
+        
+        if not cls.html_path.exists():
+            raise FileNotFoundError(f"Missing {cls.html_path}. Run tools/build_master_unified_web.py first.")
 
-if not html_path.exists():
-    print(f"Error: {html_path} does not exist. Run build_master_unified_web.py first.")
-    sys.exit(1)
+    def test_complete_frontend_flow(self):
+        """Chay bo kiem thu 7/7 chuc nang giao dien va luong thanh toan tren Microsoft Edge Headless."""
+        raw_html = self.html_path.read_text(encoding='utf-8')
 
-raw_html = html_path.read_text(encoding='utf-8')
-
-test_js = """
+        test_js = """
 <script>
 window.alert = function(msg) { console.log('ALERT_CALLED: ' + msg); };
 window.addEventListener('load', function() {
@@ -63,12 +68,12 @@ window.addEventListener('load', function() {
     }
   });
   if (navPass) {
-    console.log('TEST 3 (Taskbar 6-Tab Golden Highlight): PASS');
+    console.log('TEST 3 (Taskbar Golden Amber Highlight): PASS');
   } else {
     console.log('TEST 3: FAIL');
   }
 
-  // 4. DANH MỤC SẢN PHẨM Mega Menu Dropdown
+  // 4. DANH MUC SAN PHAM Mega Menu Dropdown
   const megaBtn = document.getElementById('categoryMegaMenuBtn');
   const megaDrop = document.getElementById('categoryMegaMenuDropdown');
   const headerEl = document.getElementById('storeHeader');
@@ -81,7 +86,7 @@ window.addEventListener('load', function() {
   const closed = megaDrop.classList.contains('hidden');
   
   if (opened && closed && itemsCount >= 6 && !headerOverflowHidden) {
-    console.log('TEST 4 (DANH MỤC SẢN PHẨM Dropdown): PASS (' + itemsCount + ' category items, no overflow clipping)');
+    console.log('TEST 4 (DANH MUC SAN PHAM Dropdown): PASS (' + itemsCount + ' category items, no overflow clipping)');
   } else {
     console.log('TEST 4: FAIL');
   }
@@ -149,26 +154,31 @@ window.addEventListener('load', function() {
 </script>
 """
 
-test_file = ROOT / 'duwcsanhlib-static-web' / 'test_runner_suite.html'
-test_file.write_text(raw_html.replace('</body>', test_js + '</body>'), encoding='utf-8')
+        test_file = ROOT / 'duwcsanhlib-static-web' / 'test_checkout_runner.html'
+        test_file.write_text(raw_html.replace('</body>', test_js + '</body>'), encoding='utf-8')
 
-try:
-    file_url = 'file:///' + str(test_file.resolve()).replace('\\', '/')
-    res = subprocess.run([
-        edge_path,
-        '--headless',
-        '--disable-gpu',
-        '--window-size=440,956',
-        '--enable-logging=stderr',
-        '--v=1',
-        '--dump-dom',
-        file_url
-    ], capture_output=True, timeout=15)
+        try:
+            file_url = 'file:///' + str(test_file.resolve()).replace('\\', '/')
+            res = subprocess.run([
+                self.edge_path,
+                '--headless',
+                '--disable-gpu',
+                '--window-size=440,956',
+                '--enable-logging=stderr',
+                '--v=1',
+                '--dump-dom',
+                file_url
+            ], capture_output=True, timeout=15)
 
-    for line in res.stderr.decode('utf-8', errors='ignore').splitlines():
-        if 'TEST' in line:
-            print(line)
-finally:
-    if test_file.exists():
-        test_file.unlink()
+            stderr = res.stderr.decode('utf-8', errors='ignore')
+            test_lines = [line for line in stderr.splitlines() if re.search(r'TEST \d.*: PASS', line)]
+            
+            self.assertEqual(len(test_lines), 7, f"Kỳ vọng 7 bài kiểm thử PASS, thực tế đạt {len(test_lines)}: {test_lines}")
+            for t_line in test_lines:
+                self.assertIn(': PASS', t_line, f"Thất bại ở bài: {t_line}")
+        finally:
+            if test_file.exists():
+                test_file.unlink()
 
+if __name__ == '__main__':
+    unittest.main(verbosity=2)

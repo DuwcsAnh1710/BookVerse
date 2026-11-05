@@ -7,7 +7,10 @@ ROOT = Path("d:/VSCode/HKDN/BookVerse")
 sys.path.insert(0, str(ROOT))
 sys.stdout.reconfigure(encoding="utf-8")
 
-import test_local_web
+try:
+    import server as store_core
+except ImportError:
+    import test_local_web as store_core
 from tools.checkout_template import CHECKOUT_VIEW_HTML
 from tools.checkout_js import CHECKOUT_JS
 
@@ -50,11 +53,11 @@ landing_view_html = f"""
   </div>
 """
 
-# 2. Render base store HTML from test_local_web
-rendered_html = test_local_web.HTML_TEMPLATE.replace(
-    '__PRODUCTS_JSON__', json.dumps(test_local_web.products, ensure_ascii=False)
+# 2. Render base store HTML from server
+rendered_html = store_core.HTML_TEMPLATE.replace(
+    '__PRODUCTS_JSON__', json.dumps(store_core.products, ensure_ascii=False)
 ).replace(
-    '__PAGES_JSON__', json.dumps(test_local_web.pages_data, ensure_ascii=False)
+    '__PAGES_JSON__', json.dumps(store_core.pages_data, ensure_ascii=False)
 )
 
 rendered_html = rendered_html.replace('href="/assets/', 'href="assets/')
